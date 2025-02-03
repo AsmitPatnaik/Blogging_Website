@@ -12,12 +12,12 @@
 
 <body>
 
-    <!-- navigaion part -->
+    <!-- navigation part -->
 
     <nav class="navigation max-width-1 m-auto">
         <div class="nav-left">
             <a href="/">
-                <span><img src="images/logo.jpeg"  alt=""></span>
+                <span><img src="images/logo.jpeg" alt=""></span>
             </a>
             <ul>
                 <li><a href="./index.html">Home</a></li>
@@ -36,6 +36,8 @@
     <div class="max-width-1 m-auto">
         <hr>
     </div>
+
+    
 
     <!-- content part -->
     <div class="m-auto content max-width-1 my-2">
@@ -58,16 +60,17 @@
         <h2>Featured Articles</h2>
         <div class="year-box adjust-year">
             <div>
-                <h3>Year </h3>
+                <h3>Year</h3>
             </div>
             <div>
-                <input type="radio" name="year" id=""> 2024
+                <input type="radio" name="year" id="year2024" value="2024" onchange="filterPosts()"> 2024
             </div>
             <div>
-                <input type="radio" name="year" id=""> 2025
+                <input type="radio" name="year" id="year2025" value="2025" onchange="filterPosts()"> 2025
             </div>
         </div>
-        <div class="home-article">
+
+        <div class="home-article" data-year="2024">
             <div class="home-article-img">
                 <img src="./images/img1.jpg" alt="article">
             </div>
@@ -79,7 +82,8 @@
                 <span>07 January | 6 min read</span>
             </div>
         </div>
-        <div class="home-article">
+
+        <div class="home-article" data-year="2025">
             <div class="home-article-img">
                 <img src="./images/img2.jpg" alt="article">
             </div>
@@ -91,7 +95,8 @@
                 <span>12 February | 8 min read</span>
             </div>
         </div>
-        <div class="home-article">
+
+        <div class="home-article" data-year="2024">
             <div class="home-article-img">
                 <img src="img/2.png" alt="article">
             </div>
@@ -103,7 +108,8 @@
                 <span>20 March | 5 min read</span>
             </div>
         </div>
-        <div class="home-article">
+
+        <div class="home-article" data-year="2025">
             <div class="home-article-img">
                 <img src="./images/img3.jpg" alt="article">
             </div>
@@ -121,18 +127,14 @@
         <hr>
     </div>
 
-    
-
-    <div class="max-width-1 m-auto">
-        <hr>
-    </div>
-
     <!-- footer -->
-
     <div class="footer">
         <p>Copyright &copy; TheMindJournal.com </p>
         <a href="https://www.vecteezy.com/free-vector/typewriter">Vector Credits: Vecteezy</a>
     </div>
+
+    <script src="./js/index.js"></script>
+
 </body>
 
 </html>
