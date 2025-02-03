@@ -142,3 +142,43 @@
 .footer a {
   color: white;
 }
+
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --nav-bg: #f8f9fa;
+  --article-bg: #f1f1f1;
+}
+
+
+
+.dark-mode {
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
+  --nav-bg: #333333;
+  --article-bg: #444444;
+}
+
+#dark-mode-toggle{
+
+  margin: 10px;
+  margin-left: 20px;
+}
+
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation {
+  background-color: var(--nav-bg);
+  transition: background-color 0.3s;
+}
+
+.home-article {
+  background-color: var(--article-bg);
+  transition: background-color 0.3s;
+}
